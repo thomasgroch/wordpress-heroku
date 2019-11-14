@@ -40,7 +40,7 @@
 	"predis/predis": "1.1.1",
 	"humanmade/s3-uploads": "2.0.0-beta3",
 	"wpackagist-plugin/debug-bar": "0.9",
-	"woocommerce": "*"
+    "wpackagist-plugin/woocommerce": ">=2.4.12"
   },
   "require-dev": {
 	"heroku/heroku-buildpack-php": "*",
@@ -59,9 +59,9 @@
 		"humanmade/s3-uploads"
 	  ],
 	  "web/app/plugins/{$name}/": [
+	  	"type:wordpress-plugin",
 		"wpackagist-plugin/all-in-one-seo-pack",
-		"wpackagist-plugin/debug-bar",
-		"woocommerce"
+		"wpackagist-plugin/debug-bar"
 	  ],
 	  "web/app/themes/{$name}/": [
 		"type:wordpress-theme"
